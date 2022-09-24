@@ -28,6 +28,15 @@
             text-align: center;
         }
 
+        main {
+            /* border: 1px solid black;
+        margin: auto;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center; */
+        }
+
         .input_div {
             /* background-color: #027e18; */
             padding: 1rem;
@@ -42,35 +51,37 @@
 
         input {
             /* width: 100%; */
-            
+
             height: 2rem;
             outline: none;
             border: none;
         }
-         .input2{
+
+        .input2 {
             display: block;
-    width: 100%;
-    font-family: Poppins-Regular;
-    font-size: 15px;
-    color: #555555;
-    line-height: 1.2;
-         }
+            width: 100%;
+            font-family: Poppins-Regular;
+            font-size: 15px;
+            color: #555555;
+            line-height: 1.2;
+        }
+
         .input_group {
             width: 100%;
-    position: relative;
-    border-bottom: 2px solid #adadad;
-    margin-bottom: 37px;
+            position: relative;
+            border-bottom: 2px solid #adadad;
+            margin-bottom: 37px;
             /* position: relative; */
         }
-      
+
         .input_label {
             position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    pointer-events: none;
+            display: block;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
             font-size: 1.5rem;
         }
 
@@ -297,14 +308,25 @@
         </section>
     </footer>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
-
     <script>
         let email = document.getElementById("email");
         email.addEventListener("click", () => {
             setTimeout(() => {
                 document.getElementById("hidden_input").style.display = "block";
             }, 1000);
+        });
 
+        let input = document.querySelectorAll("input");
+        input.forEach(element => {
+            element.addEventListener("keyup", () => {
+                if (element.value != '') {
+                    console.log("someting clicked ");
+                    element.classList.add("has-val");
+                }else{
+                    element.classList.remove("has-val");
+                }
+            })
+            //   
         });
     </script>
     <!-- JavaScript Bundle with Popper -->
