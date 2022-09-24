@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #000000;
+            color: #fff;
+        }
+
+        html {
+            font-size: 10px;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        .input_div {
+            /* background-color: #027e18; */
+            padding: 1rem;
+            margin: auto;
+        }
+
+        .input_div label {
+            display: block;
+            /* color: aliceblue; */
+            font-size: 1.5rem;
+        }
+
+        input {
+            /* width: 100%; */
+            
+            height: 2rem;
+            outline: none;
+            border: none;
+        }
+         .input2{
+            display: block;
+    width: 100%;
+    font-family: Poppins-Regular;
+    font-size: 15px;
+    color: #555555;
+    line-height: 1.2;
+         }
+        .input_group {
+            width: 100%;
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin-bottom: 37px;
+            /* position: relative; */
+        }
+      
+        .input_label {
+            position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+            font-size: 1.5rem;
+        }
+
+        .hidden_input {
+            display: none;
+            /* height: 0; */
+            overflow: auto;
+            transition: all 2s;
+            padding-top: 20px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .section_heading {
+            /* background-color: #026513; */
+            padding: 1.5rem;
+            background: rgb(2, 126, 24);
+            background: linear-gradient(214deg, rgba(2, 126, 24, 1) 24%, rgba(60, 179, 158, 1) 100%);
+        }
+
+        .section_heading h2 {
+            font-size: 1.5rem;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+        li {
+            list-style: none;
+
+        }
+
+        .sub_header {
+            background-color: rgb(255 255 255 / 10%);
+            padding: 1.5rem;
+        }
+
+        .sub_header p {
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+        }
+
+        .sub_header h1 {
+            letter-spacing: 1px;
+        }
+
+        .ul_items {
+            border: 1px solid #2da67c;
+            width: 90%;
+            margin: 1rem auto;
+            padding: 1.5rem 4rem;
+            font-size: 1.5rem;
+            color: #2da67c;
+            text-align: center;
+        }
+
+        .video_div {
+            width: 80%;
+        }
+
+        .video_div img {
+            border: 1px solid #fff;
+        }
+
+        .cta {
+            background-color: #027e18;
+            width: 90%;
+            margin: 1rem auto;
+            border-radius: 4px;
+            text-align: center;
+            padding: .4rem;
+        }
+
+        .cta:hover {
+            background-color: #015811;
+        }
+
+        .cta .btn {
+            font-size: 1.5rem;
+            color: #fff;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin: 0;
+        }
+
+        .footer {
+            overflow: auto;
+            font-size: 1.1rem;
+            margin-top: 5rem;
+        }
+
+        .sm_hidden {
+            display: none;
+            color: gainsboro;
+        }
+
+        /* media query */
+        @media only screen and (min-width: 768px) {
+            html {
+                font-size: 16px;
+            }
+
+            .sm_hidden {
+                display: block;
+            }
+
+            .video_div {
+                width: 50%;
+            }
+
+            .cta {
+                width: 60%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- <div class="logo"><span>Logo</span></div> -->
+        </nav>
+    </header>
+    <main>
+        <section class="section_heading">
+            <div class="container">
+                <h2>HEY Networkers/Direct Sales Business Owners
+                </h2>
+            </div>
+        </section>
+        <section class="text-center p-3">
+            <div class="container sub_header">
+                <p class="py-3">Unlock The Secret Way To do the fastest Team Building, Know the Exact killer mindset for
+                    team
+                    building.</p>
+                <h1>CLAIM YOUR FREE Killer Team Building Mindset MASTERCLASS NOW
+                </h1>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <ul class="ul_items">
+                    <li>DESTROY COMPETITON
+                    </li>
+                    <li>BUILD INSTANT TRUST
+                    </li>
+                    <li>CREATE POWERFUL TEAM
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="video_div container">
+                <img src="salefunnel.jpeg" alt="">
+            </div>
+            <div class="container cta" id="myBtn">
+                <p class="btn">GET INSTANT ACCESS TO THE TRAINING FOR FREE ➜</p>
+                <p class="sm_hidden">Hurry up! We might have to take down this training soon!</p>
+            </div>
+        </section>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="input_div">
+                    <div class=" wrap-input2 " style="margin: 0;">
+                        <!-- <label for="email">Email</label> -->
+                        <input type="email" id="email" class="email_input input2">
+                        <span class="has-val focus-input2" data-placeholder="Email"></span>
+                    </div>
+                    <div class="hidden_input" id="hidden_input">
+                        <div class=" wrap-input2 ">
+                            <input type="text" id="fname" class="fname_input input2">
+                            <span class=" focus-input2" data-placeholder="First Name"></span>
+                        </div>
+                        <div class=" wrap-input2 ">
+                            <input type="text" id="lname" class="lname_input input2">
+                            <span class=" focus-input2" data-placeholder="Last Name"></span>
+                        </div>
+                        <div class=" wrap-input2 ">
+                            <input type="tel" id="phone" class="phone_input input2">
+                            <span class=" focus-input2" data-placeholder="Phone"></span>
+                        </div>
+                    </div>
+                    <div class="container cta">
+                        <p class="btn">GET INSTANT ACCESS ➜</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Vertically centered modal -->
+        <!-- Modal -->
+
+
+        <!-- <section>
+           <div class="input_div">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="email_input">
+            <div class="hidden_input" id="hidden_input">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" class="email_input">
+                <label for="lname">Last Email</label>
+                <input type="text" id="lname" class="email_input">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" class="email_input">
+            </div>
+           </div>
+        </section> -->
+    </main>
+    <footer class="footer">
+        <section>
+            <div class="container ">
+                <p>©WE-FLY</p>
+                <p>Privacy Policy Terms Contact us</p>
+                <p>This site is not a part of the Facebook website or Facebook Inc. Additionally, Facebook does NOT
+                    endorse this site in any way. </p>
+                <p>FACEBOOK is a trademark of META, Inc </p>
+            </div>
+        </section>
+    </footer>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+
+    <script>
+        let email = document.getElementById("email");
+        email.addEventListener("click", () => {
+            setTimeout(() => {
+                document.getElementById("hidden_input").style.display = "block";
+            }, 1000);
+
+        });
+    </script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "flex";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+            document.getElementById("hidden_input").style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+                document.getElementById("hidden_input").style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
