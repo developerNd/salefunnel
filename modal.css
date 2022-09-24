@@ -206,4 +206,12 @@
   .input2:focus + .focus-input2::before {
     width: 100%;
   }
+  .has-val.input2 + .focus-input2::after {
+    top: -13px;
+  }
+  
+  .has-val.input2 + .focus-input2::before {
+    width: 100%;
+  }
+  
   
