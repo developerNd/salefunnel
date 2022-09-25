@@ -233,9 +233,18 @@
                     <li>CREATE POWERFUL TEAM
                     </li>
                 </ul>
+                <div class="section">
+                    <div class="video_div container">
+                        <img src="salefunnel.jpeg" alt="">
+                    </div>
+                    <div class="container cta" id="myBtn">
+                        <p class="btn">GET INSTANT ACCESS TO THE TRAINING FOR FREE ➜</p>
+                        <p class="sm_hidden">Hurry up! We might have to take down this training soon!</p>
+                    </div>
+                </div>
             </div>
         </section>
-        <section>
+        <!-- <div class="section">
             <div class="video_div container">
                 <img src="salefunnel.jpeg" alt="">
             </div>
@@ -243,37 +252,56 @@
                 <p class="btn">GET INSTANT ACCESS TO THE TRAINING FOR FREE ➜</p>
                 <p class="sm_hidden">Hurry up! We might have to take down this training soon!</p>
             </div>
-        </section>
+        </div> -->
         <!-- The Modal -->
-        <div id="myModal" class="modal modal_section">
+        <div id="myModal" class="modal">
 
             <!-- Modal content -->
-            <div class="modalText cta">
-            <p class="cta-p">You're seconds away from unlocking all data resources</p>
-        </div>
-        <div class="input_div">
-            <form action="#">
-                <div class="cta-field-section email_field">
-                    <span class="cta-field-name">Email</span>
-                    <input type="email" id="email" class="email_input">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="input_div">
+                    <div class=" wrap-input2 " style="margin: 0;">
+                        <!-- <label for="email">Email</label> -->
+                        <input type="email" id="email" class="email_input input2">
+                        <span class="has-val focus-input2" data-placeholder="Email"></span>
+                    </div>
+                    <div class="hidden_input" id="hidden_input">
+                        <div class=" wrap-input2 ">
+                            <input type="text" id="fname" class="fname_input input2">
+                            <span class=" focus-input2" data-placeholder="First Name"></span>
+                        </div>
+                        <div class=" wrap-input2 ">
+                            <input type="text" id="lname" class="lname_input input2">
+                            <span class=" focus-input2" data-placeholder="Last Name"></span>
+                        </div>
+                        <div class=" wrap-input2 ">
+                            <input type="tel" id="phone" class="phone_input input2">
+                            <span class=" focus-input2" data-placeholder="Phone"></span>
+                        </div>
+                    </div>
+                    <div class="container cta">
+                        <p class="btn">GET INSTANT ACCESS ➜</p>
+                    </div>
                 </div>
-                <div class="hidden_input form-fields" id="hidden_input">
-                    <div class="cta-field-section">
-                        <span class="cta-field-name">First Name</span>
-                        <input type="text" id="fname" class="email_input">
-                    </div>
-                    <div class="cta-field-section">
-                        <span class="cta-field-name">Last Email</span>
-                        <input type="text" id="lname" class="email_input">
-                    </div>
-                    <div class="cta-field-section">
-                        <span class="cta-field-name">Phone</span>
-                        <input type="tel" id="phone" class="email_input">
-                    </div>
-                </div>
-            </form>
+            </div>
+
         </div>
-        </div>
+        <!-- Vertically centered modal -->
+        <!-- Modal -->
+        <!-- <section>
+           <div class="input_div">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="email_input">
+            <div class="hidden_input" id="hidden_input">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" class="email_input">
+                <label for="lname">Last Email</label>
+                <input type="text" id="lname" class="email_input">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" class="email_input">
+            </div>
+           </div>
+        </section> -->
     </main>
     <footer class="footer">
         <section>
