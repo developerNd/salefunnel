@@ -245,56 +245,35 @@
             </div>
         </section>
         <!-- The Modal -->
-        <div id="myModal" class="modal">
+        <div id="myModal" class="modal modal_section">
 
             <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <div class="input_div">
-                    <div class=" wrap-input2 " style="margin: 0;">
-                        <!-- <label for="email">Email</label> -->
-                        <input type="email" id="email" class="email_input input2">
-                        <span class="has-val focus-input2" data-placeholder="Email"></span>
+            <div class="modalText cta">
+            <p class="cta-p">You're seconds away from unlocking all data resources</p>
+        </div>
+        <div class="input_div">
+            <form action="#">
+                <div class="cta-field-section email_field">
+                    <span class="cta-field-name">Email</span>
+                    <input type="email" id="email" class="email_input">
+                </div>
+                <div class="hidden_input form-fields" id="hidden_input">
+                    <div class="cta-field-section">
+                        <span class="cta-field-name">First Name</span>
+                        <input type="text" id="fname" class="email_input">
                     </div>
-                    <div class="hidden_input" id="hidden_input">
-                        <div class=" wrap-input2 ">
-                            <input type="text" id="fname" class="fname_input input2">
-                            <span class=" focus-input2" data-placeholder="First Name"></span>
-                        </div>
-                        <div class=" wrap-input2 ">
-                            <input type="text" id="lname" class="lname_input input2">
-                            <span class=" focus-input2" data-placeholder="Last Name"></span>
-                        </div>
-                        <div class=" wrap-input2 ">
-                            <input type="tel" id="phone" class="phone_input input2">
-                            <span class=" focus-input2" data-placeholder="Phone"></span>
-                        </div>
+                    <div class="cta-field-section">
+                        <span class="cta-field-name">Last Email</span>
+                        <input type="text" id="lname" class="email_input">
                     </div>
-                    <div class="container cta">
-                        <p class="btn">GET INSTANT ACCESS ➜</p>
+                    <div class="cta-field-section">
+                        <span class="cta-field-name">Phone</span>
+                        <input type="tel" id="phone" class="email_input">
                     </div>
                 </div>
-            </div>
-
+            </form>
         </div>
-        <!-- Vertically centered modal -->
-        <!-- Modal -->
-
-
-        <!-- <section>
-           <div class="input_div">
-            <label for="email">Email</label>
-            <input type="email" id="email" class="email_input">
-            <div class="hidden_input" id="hidden_input">
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" class="email_input">
-                <label for="lname">Last Email</label>
-                <input type="text" id="lname" class="email_input">
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" class="email_input">
-            </div>
-           </div>
-        </section> -->
+        </div>
     </main>
     <footer class="footer">
         <section>
