@@ -59,16 +59,23 @@
             <!-- Modal content -->
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <div class="modalText cta" id="modalText">
+                <div class="div-hide" id="modalText">
+                <div class="modalText cta" >
                     <!-- <p class="cta-p">You're seconds away from unlocking all data resources</p> -->
                 </div>
+                <div class="cta-field-section email_field">
+                    <span class="cta-field-name">Email</span>
+                    <input type="email" id="email" class="email_input">
+                </div>
+            </div>
                 <div class="input_div">
                     <form action="#">
-                        <div class="cta-field-section email_field">
-                            <span class="cta-field-name">Email</span>
-                            <input type="email" id="email" class="email_input">
-                        </div>
+                        
                         <div class="hidden_input form-fields" id="hidden_input">
+                            <div class="cta-field-section email_field">
+                                <span class="cta-field-name">Email</span>
+                                <input type="email" id="email" class="email_input">
+                            </div>
                             <div class="cta-field-section">
                                 <span class="cta-field-name">First Name</span>
                                 <input type="text" id="fname" class="email_input">
@@ -83,7 +90,7 @@
                             </div>
                             <div class="cta-btn-container">
                                 <input type="submit" value="Submit" class="cta-button cta-submit-form accent-button"
-                                    data-cta-id="465635" style="color:#ffffff;background-color:#ff6a00;margin-bottom: 12px;">
+                                    data-cta-id="465635" style="color:#ffffff;background-color:#ff6a00;margin-bottom: 12px;border-radius: 0;">
                             </div>
                         </div>
                     </form>
